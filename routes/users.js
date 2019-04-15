@@ -38,14 +38,14 @@ router.post('/register', (req, res, next) =>{
        // secure: false, // true for 465, false for other ports
        service: 'gmail',
        auth: {
-           user: 'memonmusaddiq@gmail.com', // generated ethereal user
-           pass: 'Musaddiq123' // generated ethereal password
+           user: '', // generated ethereal user
+           pass: 'M' // generated ethereal password
        }
    });
 
    // setup email data with unicode symbols
    let mailOptions = {
-       from: '"Nerdware" <memonmusaddiq@gmail.com>', // sender address
+       from: '"Nerdware" <>', // sender address
        to: req.body.email, // list of receivers
        subject: 'Welcome to Nerdware, '+req.body.fname, // Subject line
        text: 'You have been registered to Nerdware as a Student', // plain text body
