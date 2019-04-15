@@ -15,7 +15,7 @@ exports.nodemailer.createTestAccount((err, account) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: 'y5gt5kqv7rudzdzg@ethereal.email', // sender address
-        to: 'k164054@nu.edu.pk', // list of receivers
+        to: '', // list of receivers
         subject: 'Hello ✔', // Subject line
         text: 'Hello world?', // plain text body
         html: '<b>Hello world?</b>' // html body
